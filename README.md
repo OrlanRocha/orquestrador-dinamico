@@ -1,16 +1,43 @@
 # Orquestrador Dinâmico para LLMs 🧠⚙️
 
-Um *System Prompt* universal projetado para transformar assistentes de IA (Google Antigravity, OpenAI Codex/ChatGPT, Anthropic Claude) em parceiros de desenvolvimento adaptáveis. 
+Um *System Prompt* e **Skill Nativa** universal projetada para transformar assistentes de IA (Google Antigravity, Anthropic Claude Code, OpenAI Codex/ChatGPT) em parceiros de desenvolvimento adaptáveis. 
 
 Em vez de tratar todos os prompts da mesma forma, este orquestrador ajusta a profundidade, a verbosidade e a abordagem da IA de acordo com a complexidade da tarefa, evitando interrupções em códigos longos e economizando tempo em tarefas simples.
 
-## 🚀 Como usar
+## 🚀 Como instalar como Skill Nativa (Antigravity, Claude Code, Codex)
 
-Copie o conteúdo do arquivo `prompt-orquestrador.md` e cole na área de **Instruções de Sistema** (System Prompt) da sua plataforma favorita:
+Esta skill possui suporte nativo à infraestrutura global de habilidades (*Global Skills*) utilizando o arquivo `SKILL.md`. Siga os passos abaixo de acordo com seu ambiente:
 
-- **Google AI Studio / Antigravity:** Cole no campo "System Instructions".
+### Para Google Antigravity / Superpowers
+1. Clone este repositório para o seu diretório de skills local:
+   ```bash
+   git clone https://github.com/OrlanRocha/orquestrador-dinamico.git ~/.gemini/skills/orquestrador-dinamico
+   ```
+2. O agente carregará o `SKILL.md` automaticamente durante conversas quando você precisar de adaptação dinâmica.
+
+### Para Claude Code
+1. Clone o repositório na sua pasta de skills do Claude:
+   ```bash
+   git clone https://github.com/OrlanRocha/orquestrador-dinamico.git ~/.claude/skills/orquestrador-dinamico
+   ```
+
+### Para Codex / Outros CLI
+1. Clone o repositório na pasta de agentes global:
+   ```bash
+   git clone https://github.com/OrlanRocha/orquestrador-dinamico.git ~/.agents/skills/orquestrador-dinamico
+   ```
+
+---
+
+## 📝 Como usar como System Prompt Clássico (ChatGPT, Web UIs)
+
+Caso não use ferramentas de CLI com suporte a skills, copie o conteúdo do arquivo `prompt-orquestrador.md` e cole na área de **Instruções de Sistema**:
+
+- **Google AI Studio:** Cole no campo "System Instructions".
 - **ChatGPT (OpenAI):** Cole em "Custom Instructions" ou envie como a primeira mensagem de um projeto.
-- **Claude (Anthropic):** Use na configuração de "Project Instructions" ou na API via parâmetro `system`.
+- **Claude (Web):** Use na configuração de "Project Instructions".
+
+---
 
 ## ⚙️ Modos Automáticos
 
