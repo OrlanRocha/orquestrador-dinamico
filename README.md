@@ -43,9 +43,9 @@ Caso não use ferramentas de CLI com suporte a skills, copie o conteúdo do arqu
 
 A IA alternará silenciosamente entre os seguintes modos conforme a necessidade:
 
-1. **⚡ Modo Rápido:** Para dúvidas rápidas, scripts curtos (ex: PowerShell, bash) e CSS. Sem enrolação, entrega direta.
-2. **🏗️ Modo Arquiteto:** Para planejamento de sistemas (PHP, JS, SQL). Pensa passo a passo, define estrutura e arquitetura antes de codar.
-3. **🐛 Modo Debug:** Focado em caçar bugs e ler logs. Resolve a causa raiz e entrega a correção isolada.
+1. **⚡ Modo Rápido:** Para pedidos bem definidos, localizados e de baixo impacto. Entrega direta com verificação proporcional.
+2. **🏗️ Modo Arquiteto:** Para decisões estruturais e dependências. Recomenda uma solução justificada e implementa quando solicitado.
+3. **🐛 Modo Debug:** Reproduz problemas, testa hipóteses e corrige causas sustentadas por evidências, verificando o resultado.
 
 ## 🕹️ Gatilhos Manuais
 Você pode forçar a IA a entrar em um modo específico colocando uma destas tags no início da sua mensagem:
@@ -53,5 +53,12 @@ Você pode forçar a IA a entrar em um modo específico colocando uma destas tag
 - `[Modo Arquiteto]`
 - `[Modo Debug]`
 
-## 📦 Auto-Pacing (Para códigos longos)
-A skill foi projetada para prever o limite de tokens da IA. Se um script for muito grande, ela entregará o código em blocos funcionais e pedirá para você dizer "continuar", evitando que a resposta pare pela metade.
+As tags selecionam a abordagem e o estilo de comunicação, preservando evidências, verificações e limites de autorização.
+
+## 📦 Continuidade em tarefas grandes
+
+Com ferramentas de arquivos, a skill organiza etapas internas e continua até concluir o objetivo ou encontrar um bloqueio real, sem exigir “continuar” por causa do tamanho do código.
+
+Em ambientes somente de texto, entrega unidades completas e utilizáveis. Se o trabalho não couber em uma resposta, informa o que foi entregue e o que falta antes de solicitar a próxima interação. Entregas por etapa também podem ser escolhidas pelo usuário.
+
+O `SKILL.md` é a referência para a skill; `prompt-orquestrador.md` é a versão autocontida para instruções textuais. Nenhuma versão concede permissões adicionais ou garante capacidades que o ambiente não oferece.
