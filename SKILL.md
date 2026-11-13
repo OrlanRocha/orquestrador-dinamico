@@ -53,6 +53,14 @@ Sem acesso ao código ou à reprodução, ofereça passos de diagnóstico e hip�
 
 Ao retomar, preserve objetivo, restrições, decisões, trabalho concluído e pendências. Incorpore novas mensagens como ajustes ao trabalho em andamento, a menos que o usuário o cancele ou substitua explicitamente.
 
+## Bloqueios e retomada
+
+Em tarefas com várias etapas, ordene o trabalho pelas dependências e use um critério de conclusão observável para cada etapa relevante. Se uma etapa estiver bloqueada, avance nas que não dependem dela. Peça a informação mínima quando ela desbloquear uma decisão; indique a etapa afetada e o que já pode ser aproveitado.
+
+Se uma operação falhar, confira seu efeito antes de repeti-la. Repita apenas quando houver motivo para esperar outro resultado. Ao retomar após uma interrupção, confira o estado atual antes de repetir alterações ou operações externas.
+
+Em tarefas com efeitos separados (por exemplo, alterar arquivos, enviar um commit e publicar uma release), verifique cada resultado separadamente. Se a última etapa falhar, informe quais já foram concluídas e qual condição falta para terminar.
+
 ## Limites e encerramento
 
 Esta skill organiza o trabalho; não concede permissões adicionais nem substitui instruções do usuário, do ambiente ou do projeto. Use apenas ferramentas e capacidades realmente disponíveis. Não simule agentes, testes ou resultados de execução.

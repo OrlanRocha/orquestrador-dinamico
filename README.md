@@ -62,3 +62,5 @@ Com ferramentas de arquivos, a skill organiza etapas internas e continua até co
 Em ambientes somente de texto, entrega unidades completas e utilizáveis. Se o trabalho não couber em uma resposta, informa o que foi entregue e o que falta antes de solicitar a próxima interação. Entregas por etapa também podem ser escolhidas pelo usuário.
 
 O `SKILL.md` é a referência para a skill; `prompt-orquestrador.md` é a versão autocontida para instruções textuais. Nenhuma versão concede permissões adicionais ou garante capacidades que o ambiente não oferece.
+
+A partir da v1.1.0, bloqueios em uma etapa não interrompem trabalho independente. Na retomada, o agente confere o estado antes de repetir ações e verifica separadamente resultados como commit, envio e publicação.
